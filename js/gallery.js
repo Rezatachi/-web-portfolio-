@@ -41,7 +41,7 @@ const doptions = {
     bottom: '64px', // default: '32px'
     right: 'unset', // default: '32px'
     left: '32px', // default: 'unset'
-    time: '0.5s', // default: '0.3s'
+    time: '0.2s', // default: '0.3s'
     mixColor: '#fff', // default: '#fff'
     backgroundColor: '#D8D8D8',  // default: '#fff'
     buttonColorDark: '#100f2c',  // default: '#100f2c'
