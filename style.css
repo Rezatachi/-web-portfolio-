@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.scrollable-element{
+    scrollbar-color: rgb(39, 37, 37);
+}
+::-webkit-scrollbar {
+    /* display: none; */
+    width: 12px;
+  }
+::-webkit-scrollbar-thumb {
+    background: rgba(143, 143, 143, 0.575);
+    border-radius: 6px;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(44, 43, 43, 0.678);
+  }
+
+
+/* ==HEADING SECTION=== */
+nav{
+    width: 100%;
+    min-height: 12vh;
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 3;
+
+}
+
+ 
+.head-items{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0px 100px 0px 150px;
+}
+
+/* ===HEADING BURGER=== */
+.menu-btn{
+    position: relative;
+    margin-top: 40px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 8vh;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+    object-fit: contain;
+
+}
+
+.menu-btn__burger{
+    position: absolute;
+    background: black;
+    width: 50px;
+    height: 6px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 2px rgba(gray, 0.2);
+
+}
+
+.menu-btn__burger::before{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background: black;
+    width: 50px;
+    top: 1rem;
+    height: 6px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 2px rgba(gray, 0.2);
+
+}
+
+.menu-btn__burger::after{
+    content: '';
+    position: absolute;
+    z-index: 2;
+    background: black;
+    width: 50px;
+    top: -1rem;
+    height: 6px;
+    border-radius: 7px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 1px 2px rgba(gray, 0.2);
+
+}
+
+
+.menu-btn.open .menu-btn__burger,
+.menu-btn.open .menu-btn__burger::before,
+.menu-btn.open .menu-btn__burger::after
+ {
+    transform: rotate(90deg);
+
+}
+
+/* ==HEADING CONTENT== */
+
+.navbar{
+    width: 300px;
+    height: 100%;
+    background-color: #d8d8d8;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+    transition: 0.5s ease-in-out;
+    z-index: 2;
+    border-left: 2px solid black;
+}
+
+.change{
+    right: 0;
+}
+.nav-list {
+/* THIS IS THE UL */
+    text-align: right;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 50px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+}
+
+.navbar li a::before,
+.navbar li a::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.navbar li a::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.navbar li a::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.navbar li a:hover::before,
+.navbar li a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.darkmode--activated p, .darkmode--activated li {
+    color: rgb(53, 47, 47);
+  }
+/* ==Main Section */
+
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.main h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+
+.main h2{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;  
+}
+
+.header-area{
+    margin-top: 100px;
+}
+.header-area h1 span{
+    color: red;
+}
+
+.aboutme-btn{
+    width: 180px;
+    height: 60px;
+    background: red;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.aboutme-btn a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 800; 
+    text-decoration: none;
+    
+}
+
+.aboutme-btn:hover{
+    background-color: gray;
+}
+
+/* ==Main About Me and Resume */
+.about{
+    bottom: 0;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.about-area h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0); 
+   padding-top: 2%;
+}
+
+.about-area p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 200px;
+    margin-top: -10%;
+}
+
+.aboutbackdrop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: -40%;
+    width: 100%;
+    height: 80vh;
+}
+
+.resume-btn{
+    width: 180px;
+    height: 60px;
+    background: red;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-top: -10%;
+    position: relative;
+}
+
+.resume-btn a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 800; 
+    text-decoration: none;
+
+}
+
+.resume-btn:hover{
+    background-color: gray;
+}
+
+
+.darkmode-layer, .darkmode-toggle {
+    z-index: 500;
+  }
+/* ==Main Section Footer== */
+.footer{
+    position: relative;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer ul{
+    height: 40px;
+    width: 20%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.footer li {
+    margin-right: 25px;
+    list-style: none;
+}
+
+.footer p{
+    font-weight: 800;
+}
+.footer a img{
+    height: 31px;
+    width: 31px;
+}
+
+
+/* ==Mobible Friendly Section=== */
+@media screen and (max-width:1024px){
+		
+		nav{
+			position: relative;
+		}
+		.head-items{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 0px 50px 0px 150px;
+}
+
+
+    .about-area h1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: left;
+        color: rgb(0, 0, 0); 
+       padding-top: 2%;
+    }
+    
+    .about-area p{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        padding: 100px;
+        margin-top: -10%;
+    }
+
+		.resume-btn{
+    width: 180px;
+    height: 60px;
+    background: red;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    margin-top: -10%;
+    position: relative;
+}
+
+.resume-btn a{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 900; 
+    text-decoration: none;
+
+}
+
+    .footer{
+        position: relative;
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .footer ul{
+        height: 40px;
+        width: 20%;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    
+    .footer li {
+        margin-right: 25px;
+        list-style: none;
+    }
+    
+    .footer p{
+        font-weight: 800;
+        font-size: 7px;
+				visibility: hidden;
+    }
+    .footer a img{
+        height: 25px;
+        width: 25px;
+
+    }
+    
+
+}
