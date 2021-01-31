@@ -417,11 +417,24 @@ grid-container {
   /* ==Mobible Friendly Section=== */
 @media screen and (max-width:1024px){
 
-
-
-  grid-container {
-    padding: 50px;
+ 
+grid-container {
+    position: relative;
+    margin-top: 50px;
     height: 670vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px;
+    grid-gap: 1000px; 
+    padding: 50px;
+  }
+  
+  grid-item {
+    height: 500px;
+    display: flex;            /* new */
+    align-items: center;      /* new */
+    justify-content: center;
+    
 
   }
   .footer{
