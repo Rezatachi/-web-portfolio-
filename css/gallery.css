@@ -321,6 +321,13 @@ nav{
 .navbar li a:hover::after{
     transform: scaleX(1);
 }
+.gal-text{
+  transition: 1s ease-in-out;
+}
+.gal-text:hover{
+  text-decoration: line-through;
+  color: red; 
+}
 
 grid-container {
     position: relative;
@@ -329,11 +336,11 @@ grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 50px;
-    grid-gap: 500px;
+    grid-gap: 1000px;
   }
   
   grid-item {
-    height: 500px;
+    height: 1000px;
     display: flex;            /* new */
     align-items: center;      /* new */
     justify-content: center;
@@ -395,6 +402,12 @@ grid-container {
 .footer a img{
     height: 31px;
     width: 31px;
+}
+
+#myBtn{
+  border: none;
+  background: transparent;
+  outline: none;
 }
 
 .darkmode-layer, .darkmode-toggle {

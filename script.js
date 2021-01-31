@@ -38,7 +38,7 @@ navContent.classList.toggle('change');
 
 //writer-text
 var options = {
-    strings: ["<span style='color:red'>Software Developer</span>", 
+    strings: ["<span style='color:red'>Software Developer{}</span>", 
     "<span style='color:blue'>Photographer</span>", "<span style='color:gray'>Graphic Designer</span>"],
     typeSpeed: 50,
     backSpeed: 50,

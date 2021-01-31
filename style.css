@@ -317,6 +317,13 @@ nav{
     transform: scaleX(1);
 }
 
+.gal-text{
+    transition: 1s ease-in-out;
+  }
+  .gal-text:hover{
+    text-decoration: line-through;
+    color: red; 
+  }
 
 .darkmode--activated p, .darkmode--activated li {
     color: rgb(53, 47, 47);
