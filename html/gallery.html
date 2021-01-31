@@ -6,9 +6,20 @@
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>  
     <link rel="stylesheet" href="/css/gallery.css">
     <title>Gallery\\</title>
+    <script>
+        // Render blocking JS:
+        if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+        </script>
 </head>
 
 <body>
+
+    <!-- ==LOADER=-->
+     <!-- Loader -->
+     <div class="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+      </div>
     <!-- NAVBAR section -->
     <nav >
         <div class="head-items">
