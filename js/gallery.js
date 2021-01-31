@@ -55,5 +55,4 @@ const doptions = {
   darkmode.showWidget();
         
 //Scroll Reveal
-ScrollReveal({reset: true});
 ScrollReveal().reveal('grid-item', {delay: 250});
