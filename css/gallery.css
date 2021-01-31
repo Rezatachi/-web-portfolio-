@@ -421,11 +421,11 @@ grid-container {
 grid-container {
     position: relative;
     margin-top: 50px;
-    height: 670vh;
+    height: 690vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 50px;
-    grid-gap: 1000px; 
+    grid-gap: 500px; 
     padding: 50px;
   }
   
