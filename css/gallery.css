@@ -376,9 +376,6 @@ grid-container {
   grid-item:nth-child(10){
     background: transparent;
     height: 25vh;
-    position: absolute;
-    bottom: 0;
-    
   }
 
   .footer{
