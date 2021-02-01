@@ -11,7 +11,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    max-height: 1190vh;
+    max-height: 1210vh;
 }
 
 .scrollable-element{
@@ -333,7 +333,7 @@ nav{
 grid-container {
     position: relative;
     margin-top: 50px;
-    max-height: 1180vh;
+    max-height: 1200vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 50px;
