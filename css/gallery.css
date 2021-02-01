@@ -376,12 +376,13 @@ grid-container {
   grid-item:nth-child(10){
     background: transparent;
     height: 25vh;
+    position: absolute;
+    bottom: 0;
     
   }
 
   .footer{
     position: relative;
-    margin-bottom: 0;
     height: 10vh;
     width: 100%;
     display: flex;
