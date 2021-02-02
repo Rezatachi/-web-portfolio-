@@ -371,13 +371,13 @@ grid-container {
  .darkmode--activated grid-item  {
     filter: invert(1);
 
-  grid-item:nth-child(10){
-    background: transparent;
-    height: 25vh;
-
+  
+  
+   grid-item {
+    background-color: white;
+    object-fit: cover; 
+    overflow: hidden;
   }
-  
-  
 
 
 
