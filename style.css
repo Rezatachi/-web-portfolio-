@@ -464,9 +464,7 @@ nav{
   }
 /* ==Main Section Footer== */
 
-grid-item .footer{
-    background-color: blue;
-}
+
 .footer{
     position: relative;
     height: 10vh;

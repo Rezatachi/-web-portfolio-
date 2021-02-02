@@ -59,23 +59,37 @@ const doptions = {
 ScrollReveal().reveal('grid-item', {distance: '100px', delay: 250});
 
 
-//SCROLL TORP
-//Get the button:
-mybutton = document.getElementById("myBtn");
+function showButton() {
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
+  var button  = $('#myBtn'), //button that scrolls user to top
+      view = $(window),
+      timeoutKey = -1;
+
+  $(document).on('scroll', function() {
+      if(timeoutKey) {
+          window.clearTimeout(timeoutKey);
+      }
+      timeoutKey = window.setTimeout(function(){
+
+          if (view.scrollTop() < 300) {
+              button.fadeOut();
+          }
+          else {
+              button.fadeIn();
+          }
+      }, 100);
+  });
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+$('#myBtn').on('click', function(){
+  $('html, body').stop().animate({
+      scrollTop: 0
+  }, 500, 'linear');
+  return false;
+});
+
+//call function on document ready
+$(function(){
+ showButton();
+});
