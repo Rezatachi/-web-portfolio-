@@ -331,17 +331,16 @@ nav{
 
 grid-container {
     position: relative;
-<<<<<<< HEAD
+    
     margin-top: 90px;
     height: 8000px;
-=======
     margin-top: 50px;
     max-height: 1200vh;
->>>>>>> ce8b3fda39a475b8fbc86475240a150f71af7f6f
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 50px;
     grid-gap: 1000px;
+    padding: 100px;
   }
   
   grid-item {
@@ -369,21 +368,19 @@ grid-container {
 
   } 
 
-<<<<<<< HEAD
  .darkmode--activated grid-item  {
     filter: invert(1);
-=======
 
   grid-item:nth-child(10){
     background: transparent;
     height: 25vh;
->>>>>>> ce8b3fda39a475b8fbc86475240a150f71af7f6f
+
   }
   
   
 
-<<<<<<< HEAD
-=======
+
+
   .footer{
     position: relative;
     height: 10vh;
@@ -415,7 +412,7 @@ grid-container {
     height: 31px;
     width: 31px;
 }
->>>>>>> ce8b3fda39a475b8fbc86475240a150f71af7f6f
+
 
 .darkmode-layer, .darkmode-toggle {
     z-index: 500;
