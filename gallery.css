@@ -332,7 +332,6 @@ nav{
 grid-container {
     position: relative;
     margin-top: 50px;
-    height: 1190vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 50px;
@@ -421,6 +420,7 @@ grid-container {
 grid-container {
     position: relative;
     margin-top: 50px;
+    margin-bottom: 100px;
     height: 630vh;
     display: grid;
     grid-template-columns: 1fr;
