@@ -65,7 +65,8 @@ const doptions = {
 const darkmode = new Darkmode(doptions);
 darkmode.showWidget();
       
-
+//Remove #
+document.location.href = String( document.location.href ).replace( "#/", "" );
 
 //Scroll Reveal
 ScrollReveal().reveal('.about-area h1', {distance: '100px', delay: 250});
