@@ -66,7 +66,6 @@ const darkmode = new Darkmode(doptions);
 darkmode.showWidget();
       
 
-
 //Scroll Reveal
 ScrollReveal().reveal('.about-area h1', {distance: '100px', delay: 250});
 ScrollReveal().reveal('.about-area p', {distance: '100px', delay: 500});
