@@ -18,10 +18,10 @@ body{
 
   } */
 
-  /* ==LOADER == */
+/* ==LOADER == */
 
 
-/* .loading-wrapper {
+ .loading-wrapper {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -149,7 +149,7 @@ body{
     margin: 0 auto;
     text-align: center;
     background-color: #888;
-  } */
+  } 
 /* ==HEADING SECTION=== */
 nav{
     width: 100%;
