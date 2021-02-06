@@ -8,7 +8,7 @@ window.onload = function(){
     setTimeout(function(){
       loader.style.display = "none";
     }, 500);
-  },1500);
+  },900);
 }
 
 
