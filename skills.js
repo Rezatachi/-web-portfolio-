@@ -1,15 +1,15 @@
-// //LOADER
+//LOADER
 
 
-// const loader = document.querySelector(".loading-wrapper");
-// window.onload = function(){
-//   setTimeout(function(){
-//     loader.style.opacity = "0";
-//     setTimeout(function(){
-//       loader.style.display = "none";
-//     }, 500);
-//   },1500);
-// }
+const loader = document.querySelector(".loading-wrapper");
+window.onload = function(){
+  setTimeout(function(){
+    loader.style.opacity = "0";
+    setTimeout(function(){
+      loader.style.display = "none";
+    }, 500);
+  },1500);
+}
 
 
 // Bar Anim
