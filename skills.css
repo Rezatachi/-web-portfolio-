@@ -185,7 +185,6 @@ nav{
     height: 8vh;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    background-color: #D8D8D8;
     border-radius: 20px;
     object-fit: contain;
 
@@ -314,14 +313,10 @@ nav{
     text-decoration: line-through;
     color: red; 
   }
-
-.darkmode--activated p, .darkmode--activated li {
-    color: rgb(53, 47, 47);
-  }
-
   .darkmode-layer, .darkmode-toggle {
     z-index: 500;
   }
+
 
   #myBtn{
       border: none;
@@ -337,6 +332,7 @@ nav{
      align-items: center;
      flex-direction: column;
      row-gap: 1rem;
+
  }
 
  .py-bar{
@@ -352,8 +348,8 @@ nav{
  }
 
  .py-innerbar{
-     position: relative;
-     height: 3px;
+    position: absolute;
+    height: 100%;
      background-color: red;
      width: 45%;
      bottom: 0;
@@ -373,6 +369,9 @@ nav{
    font-size: 25px;
    padding: 2.5px 0;
  }
+ .py-bar i{
+  display: none;
+ }
  .jv-bar{
   position: relative;
   width: 1200px;
@@ -386,8 +385,8 @@ nav{
 }
 
 .jv-innerbar{
-  position: relative;
-  height: 3px;
+  position: absolute;
+  height: 100%;
   background-color: red;
   width: 25%;
   bottom: 0;
@@ -407,6 +406,9 @@ list-style: none;
 font-size: 25px;
 padding: 2.5px 0;
 }
+.jv-bar i{
+  display: none;
+ }
 .wb-bar{
   position: relative;
   width: 1200px;
@@ -420,8 +422,8 @@ padding: 2.5px 0;
 }
 
 .wb-innerbar{
-  position: relative;
-  height: 3px;
+  position: absolute;
+  height: 100%;
   background-color: red;
   width: 61%;
   bottom: 0;
@@ -440,6 +442,10 @@ align-items: center;
 list-style: none;
 font-size: 25px;
 padding: 2.5px 0;
+}
+
+.wb-bar i{
+ display: none;
 }
 
 /* Mobile Responive */
@@ -473,6 +479,18 @@ padding: 2.5px 0;
     display: none;
   }
 
+  .py-bar ul{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .py-bar i{
+    display: unset;
+    font-size: 40px;
+    
+  
+   }
+
   .jv-bar{
     margin-bottom: -5rem;
     height: 500px;
@@ -489,6 +507,17 @@ padding: 2.5px 0;
   .jv-bar h1{
     display: none;
   }
+  .jv-bar ul{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .jv-bar i{
+    display: unset;
+    font-size: 40px;
+    
+  
+   }
 
   
   .wb-bar{
@@ -508,6 +537,18 @@ padding: 2.5px 0;
     display: none;
   }
 
+  .wb-bar ul{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .wb-bar i{
+    display: unset;
+    font-size: 40px;
+    
+  
+   }
+   
 }
 
  
