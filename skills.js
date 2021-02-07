@@ -104,5 +104,5 @@ const doptions = {
   
   var x = window.matchMedia("(max-width: 1024px)")
   MobileScroll(x) // Call listener function at run time
-  x.addEventListener(MobileScroll) // Attach listener function on state changes
+  x.addEventListener(x, MobileScroll) // Attach listener function on state changes
 
