@@ -1,15 +1,15 @@
-// //LOADER
+//LOADER
 
 
-// const loader = document.querySelector(".loading-wrapper");
-// window.onload = function(){
-//   setTimeout(function(){
-//     loader.style.opacity = "0";
-//     setTimeout(function(){
-//       loader.style.display = "none";
-//     }, 500);
-//   },1500);
-// }
+const loader = document.querySelector(".loading-wrapper");
+window.onload = function(){
+  setTimeout(function(){
+    loader.style.opacity = "0";
+    setTimeout(function(){
+      loader.style.display = "none";
+    }, 500);
+  },900);
+}
 
 
 // Bar Anim
@@ -90,3 +90,17 @@ const doptions = {
   //Scroll Reveal
   ScrollReveal().reveal('.py-innerbar', {origin: 'left', distance: '500px', duration: 3000});
   ScrollReveal().reveal('.jv-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 250});
+  ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
+
+  function MobileScroll(x) {
+    if (x.matches) { // If media query matches
+      //Scroll Reveal
+  ScrollReveal().reveal('.py-innerbar', {origin: 'bottom', distance: '500px', duration: 3000});
+  ScrollReveal().reveal('.jv-innerbar', {origin: 'bottom', distance: '500px', duration: 3000, delay: 250});
+  ScrollReveal().reveal('.wb-innerbar', {origin: 'bottom', distance: '500px', duration: 3000, delay: 740});
+    } 
+  }
+  
+  var x = window.matchMedia("(max-width: 1024px)")
+  MobileScroll(x) // Call listener function at run time
+  x.addEventListener(MobileScroll) // Attach listener function on state changes

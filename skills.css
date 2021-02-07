@@ -13,15 +13,15 @@ body{
     overflow-x: hidden;
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
    display: none; 
 
-  } */
+  } 
 
   /* ==LOADER == */
 
 
-/* .loading-wrapper {
+ .loading-wrapper {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -149,7 +149,7 @@ body{
     margin: 0 auto;
     text-align: center;
     background-color: #888;
-  } */
+  }
 /* ==HEADING SECTION=== */
 nav{
     width: 100%;
@@ -368,8 +368,10 @@ nav{
    align-items: center;
  }
 
- .py-bar li{
+ .py-bar li, .py-bar h1{
    list-style: none;
+   font-size: 25px;
+   padding: 2.5px 0;
  }
  .jv-bar{
   position: relative;
@@ -400,8 +402,112 @@ padding: 0px 15px;
 align-items: center;
 }
 
-.jv-bar li{
+.jv-bar li, .jv-bar h1{
 list-style: none;
+font-size: 25px;
+padding: 2.5px 0;
+}
+.wb-bar{
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  border-radius: 50px;   
+  display: flex;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+ justify-content: left;
+ flex-direction: column-reverse;
+ overflow: hidden;
+}
+
+.wb-innerbar{
+  position: relative;
+  height: 3px;
+  background-color: red;
+  width: 61%;
+  bottom: 0;
+  border-radius: 25px;
+}
+.wb-bar ul{
+position: absolute;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0px 15px;
+align-items: center;
+}
+
+.wb-bar li, .wb-bar h1{
+list-style: none;
+font-size: 25px;
+padding: 2.5px 0;
+}
+
+/* Mobile Responive */
+@media screen and (max-width:1024px){
+
+
+  .skills-container{
+    
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    row-gap: 2rem;
+    
+}
+
+  .py-bar{
+    margin-bottom: -5rem;
+    height: 500px;
+    width: 50px;
+  }
+
+  .py-innerbar{
+    height: 45%;
+    width: 100%;
+  }
+
+  .py-bar h1{
+    display: none;
+  }
+
+  .jv-bar{
+    margin-bottom: -5rem;
+    height: 500px;
+    width: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .jv-innerbar{
+    height: 25%;
+    width: 100%;
+  }
+
+  .jv-bar h1{
+    display: none;
+  }
+
+  
+  .wb-bar{
+    margin-bottom: -5rem;
+    height: 500px;
+    width: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .wb-innerbar{
+    height: 61%;
+    width: 100%;
+  }
+
+  .wb-bar h1{
+    display: none;
+  }
+
 }
 
  
