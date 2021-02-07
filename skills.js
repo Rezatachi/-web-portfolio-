@@ -90,6 +90,7 @@ const doptions = {
   //Scroll Reveal
   ScrollReveal().reveal('.py-innerbar', {origin: 'left', distance: '500px', duration: 3000});
   ScrollReveal().reveal('.jv-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 250});
+<<<<<<< HEAD
   ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
 
   function MobileScroll(x) {
@@ -104,3 +105,5 @@ const doptions = {
   var x = window.matchMedia("(max-width: 1024px)")
   MobileScroll(x) // Call listener function at run time
   x.addEventListener(MobileScroll) // Attach listener function on state changes
+=======
+>>>>>>> f7a7d2b0f04621770d9a5b3ffacacc2cfa102f6d

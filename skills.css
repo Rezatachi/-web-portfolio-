@@ -18,7 +18,7 @@ body{
 
   } 
 
-  /* ==LOADER == */
+/* ==LOADER == */
 
 
  .loading-wrapper {
@@ -149,7 +149,11 @@ body{
     margin: 0 auto;
     text-align: center;
     background-color: #888;
+<<<<<<< HEAD
   }
+=======
+  } 
+>>>>>>> f7a7d2b0f04621770d9a5b3ffacacc2cfa102f6d
 /* ==HEADING SECTION=== */
 nav{
     width: 100%;
