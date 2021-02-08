@@ -55,7 +55,7 @@ const doptions = {
   darkmode.showWidget();
         
 //Scroll Reveal
-ScrollReveal().reveal('grid-item', {distance: '100px', delay: 250});
+ScrollReveal().reveal('grid-item', {delay: 250});
 
 
 function showButton() {
