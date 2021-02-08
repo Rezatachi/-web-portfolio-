@@ -162,8 +162,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     z-index: 3;
-    
+    transition: 0.4s ease-in-out;
 
+}
+
+nav:hover{
+  backdrop-filter: blur(10px);
 }
 
 .head-items h1{

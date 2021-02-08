@@ -93,20 +93,6 @@ const doptions = {
   ScrollReveal().reveal('.ps-innerbar', {origin: 'left', distance: '500px', duration: 2000, delay: 1000});
   ScrollReveal().reveal('.be-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 140});
   ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
+  ScrollReveal().reveal('.code-icons',{scale: '.2', duration: 2500});
 
-  function MobileScroll(x) {
-    if (x.matches) { // If media query matches
-      //Scroll Reveal
-  ScrollReveal().reveal('.py-innerbar', {origin: 'bottom', distance: '500px', duration: 3000});
-  ScrollReveal().reveal('.jv-innerbar', {origin: 'bottom', distance: '500px', duration: 3000, delay: 250});
-  ScrollReveal().reveal('.ps-innerbar', {origin: 'bottom', distance: '500px', duration: 2000, delay: 500});
-  ScrollReveal().reveal('.wb-innerbar', {origin: 'bottom', distance: '500px', duration: 3000, delay: 740});
-  ScrollReveal().reveal('.be-innerbar', {origin: 'bottom', distance: '500px', duration: 2000});
-  
-    } 
-  }
-  
-  var x = window.matchMedia("(max-width: 1024px)")
-  MobileScroll(x) // Call listener function at run time
-  x.addEventListener(x, MobileScroll) // Attach listener function on state changes
 

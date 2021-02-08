@@ -14,7 +14,6 @@ window.onload = function(){
 
 
 
-
 // Bar Anim
 const menuBtn = document.querySelector('.menu-btn');
 const navContent = document.querySelector('.navbar');
