@@ -377,7 +377,7 @@ nav{
 }
 
 /* ==Main About Me and Resume */
-.about{
+#about{
     bottom: 0;
     height: 90vh;
     width: 100%;
@@ -387,41 +387,31 @@ nav{
     position: relative;
     
 }
-.about-area h1{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: left;
-    color: rgb(0, 0, 0); 
-   padding-top: 2%;
-}
 
-.about-area p{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 200px;
-    margin-top: -10%;
-}
-
-.aboutbackdrop{
+.about-area{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-bottom: -40%;
-    width: 100%;
-    height: 80vh;
+    padding: 100px;
 }
+.about-area h1{
+
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    color: rgb(0, 0, 0); 
+}
+
+.about-area p{
+
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-bottom: 50px;
+}
+
 
 .resume-btn{
     width: 180px;
@@ -432,7 +422,6 @@ nav{
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
-    margin-top: -10%;
     position: relative;
 }
 
@@ -507,26 +496,17 @@ nav{
 
 
     .about-area h1{
-        position: relative;
-        display: flex;
-        justify-content: center;
         font-size: 25px;
         font-weight: bold;
         text-align: left;
         color: rgb(0, 0, 0); 
-       padding-top: 2%;
     }
     
     .about-area p{
-        position: relative;
-        display: flex;
-        justify-content: center;
         font-size: 15px;
         font-weight: 400;
         text-align: center;
         color: rgb(0, 0, 0);
-        padding: 100px;
-        margin-top: -10%;
     }
 
 		.resume-btn{
@@ -538,7 +518,6 @@ nav{
     cursor: pointer;
     outline: none;
     transition: all 0.2s ease;
-    margin-top: -10%;
     position: relative;
 }
 

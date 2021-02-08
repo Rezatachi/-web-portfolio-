@@ -447,6 +447,80 @@ padding: 2.5px 0;
 .wb-bar i{
  display: none;
 }
+.be-bar{
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  border-radius: 50px;   
+  display: flex;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+ justify-content: left;
+ flex-direction: column-reverse;
+ overflow: hidden;
+}
+
+.be-innerbar{
+  position: absolute;
+  height: 100%;
+  background-color: red;
+  width: 15%;
+  bottom: 0;
+  border-radius: 25px;
+}
+.be-bar ul{
+position: absolute;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0px 15px;
+align-items: center;
+}
+
+.be-bar li, .be-bar h1{
+list-style: none;
+font-size: 25px;
+padding: 2.5px 0;
+}
+.be-bar i{
+  display: none;
+ }
+ .ps-bar{
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  border-radius: 50px;   
+  display: flex;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+ justify-content: left;
+ flex-direction: column-reverse;
+ overflow: hidden;
+}
+
+.ps-innerbar{
+  position: absolute;
+  height: 100%;
+  background-color: red;
+  width: 65%;
+  bottom: 0;
+  border-radius: 25px;
+}
+.ps-bar ul{
+position: absolute;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 0px 15px;
+align-items: center;
+}
+
+.ps-bar li, .ps-bar h1{
+list-style: none;
+font-size: 25px;
+padding: 2.5px 0;
+}
+.ps-bar i{
+  display: none;
+ }
 
 /* Mobile Responive */
 @media screen and (max-width:1024px){
@@ -543,6 +617,62 @@ padding: 2.5px 0;
   }
 
   .wb-bar i{
+    display: unset;
+    font-size: 40px;
+    
+  
+   }
+   .be-bar{
+    margin-bottom: -5rem;
+    height: 500px;
+    width: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .be-innerbar{
+    height: 15%;
+    width: 100%;
+  }
+
+  .be-bar h1{
+    display: none;
+  }
+
+  .be-bar ul{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .be-bar i{
+    display: unset;
+    font-size: 40px;
+    
+  
+   }
+   .ps-bar{
+    margin-bottom: -5rem;
+    height: 500px;
+    width: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .ps-innerbar{
+    height: 61%;
+    width: 100%;
+  }
+
+  .ps-bar h1{
+    display: none;
+  }
+
+  .ps-bar ul{
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ps-bar i{
     display: unset;
     font-size: 40px;
     
