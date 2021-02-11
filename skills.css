@@ -537,6 +537,7 @@ padding: 2.5px 0;
  .skills-container{
   justify-content: center;
   align-items: center;
+  row-gap: 1.5rem;
  }
 
  .barmobile{

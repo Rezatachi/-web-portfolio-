@@ -402,6 +402,7 @@ grid-container {
   border: none;
   background: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 .darkmode-layer, .darkmode-toggle {

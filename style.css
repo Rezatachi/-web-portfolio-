@@ -185,7 +185,7 @@ nav{
     height: 8vh;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-    background-color: #D8D8D8;
+
     border-radius: 20px;
     object-fit: contain;
 
@@ -230,9 +230,8 @@ nav{
 
 }
 
-
-.menu-btn.open .menu-btn__burger,
 .menu-btn.open .menu-btn__burger::before,
+.menu-btn.open .menu-btn__burger,
 .menu-btn.open .menu-btn__burger::after
  {
     transform: rotate(90deg);
@@ -393,7 +392,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px;
+    padding: 50px;
 }
 .about-area h1{
 
@@ -494,6 +493,20 @@ nav{
     margin: 0px 50px 0px 150px;
 }
 
+.main h1{
+    font-size: 30px;
+}
+.red{
+    color: red;
+}
+
+.main h2{
+    font-size: 30px;
+}
+
+.aboutme-btn a{
+    font-size: 20px;
+}
 
     .about-area h1{
         font-size: 25px;
@@ -503,7 +516,7 @@ nav{
     }
     
     .about-area p{
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 400;
         text-align: center;
         color: rgb(0, 0, 0);

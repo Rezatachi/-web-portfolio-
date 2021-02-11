@@ -90,7 +90,7 @@ const doptions = {
   //Scroll Reveal
   ScrollReveal().reveal('.py-innerbar', {origin: 'left', distance: '500px', duration: 3000});
   ScrollReveal().reveal('.jv-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 250});
-  ScrollReveal().reveal('.ps-innerbar', {origin: 'left', distance: '500px', duration: 2000, delay: 1000});
+  ScrollReveal().reveal('.ps-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 400});
   ScrollReveal().reveal('.be-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 140});
   ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
   ScrollReveal().reveal('.code-icons',{scale: '.2', duration: 2500});
