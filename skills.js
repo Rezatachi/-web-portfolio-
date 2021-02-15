@@ -53,21 +53,7 @@ const doptions = {
   darkmode.showWidget();
 
 
-const nav = document.querySelector('nav'); 
-  // When the user scrolls the page, execute myFunction
-window.onscroll = function() {navFunction()};
 
-// Get the offset position of the navbar
-var sticky = nav.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function navFunction() {
-  if (window.pageYOffset >= sticky) {
-    nav.classList.add("blur")
-  } else {
-    nav.classList.remove("blur");
-  }
-}
   //Scroll Reveal
   ScrollReveal().reveal('.py-innerbar', {origin: 'left', distance: '500px', duration: 3000});
   ScrollReveal().reveal('.jv-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 250});
