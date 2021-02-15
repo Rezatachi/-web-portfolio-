@@ -1,6 +1,7 @@
 //LOADER
 
 
+
 const loader = document.querySelector(".loading-wrapper");
 window.onload = function(){
   setTimeout(function(){
@@ -60,7 +61,7 @@ const doptions = {
   ScrollReveal().reveal('.ps-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 400});
   ScrollReveal().reveal('.be-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 140});
   ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
+  ScrollReveal().reveal('.gt-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 140});
   ScrollReveal().reveal('.grid-item', {scale: '0.5', duration: '1500'});
-  
 
-
+ 
