@@ -51,48 +51,30 @@ const doptions = {
   
   const darkmode = new Darkmode(doptions);
   darkmode.showWidget();
-        
-  function showButton() {
 
 
-    var button  = $('#myBtn'), //button that scrolls user to top
-        view = $(window),
-        timeoutKey = -1;
-  
-    $(document).on('scroll', function() {
-        if(timeoutKey) {
-            window.clearTimeout(timeoutKey);
-        }
-        timeoutKey = window.setTimeout(function(){
-  
-            if (view.scrollTop() < 300) {
-                button.fadeOut();
-            }
-            else {
-                button.fadeIn();
-            }
-        }, 100);
-    });
+const nav = document.querySelector('nav'); 
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {navFunction()};
+
+// Get the offset position of the navbar
+var sticky = nav.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function navFunction() {
+  if (window.pageYOffset >= sticky) {
+    nav.classList.add("blur")
+  } else {
+    nav.classList.remove("blur");
   }
-  
-  $('#myBtn').on('click', function(){
-    $('html, body').stop().animate({
-        scrollTop: 0
-    }, 500, 'linear');
-    return false;
-  });
-  
-  //call function on document ready
-  $(function(){
-   showButton();
-  });
-
+}
   //Scroll Reveal
   ScrollReveal().reveal('.py-innerbar', {origin: 'left', distance: '500px', duration: 3000});
   ScrollReveal().reveal('.jv-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 250});
   ScrollReveal().reveal('.ps-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 400});
   ScrollReveal().reveal('.be-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 140});
   ScrollReveal().reveal('.wb-innerbar', {origin: 'left', distance: '500px', duration: 3000, delay: 740});
-  ScrollReveal().reveal('.code-icons',{scale: '.2', duration: 2500});
+  ScrollReveal().reveal('.grid-item', {scale: '0.5', duration: '1500'});
+  
 
 
