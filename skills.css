@@ -577,7 +577,7 @@ padding: 2.5px 0;
 }
 
 
-}
+
 .project-container{
   height: 100px;
   width: 100%;
@@ -638,11 +638,11 @@ padding: 2.5px 0;
 }
 .grid-item:nth-child(1){
 
-  background-color: red;
+  background-color: rgb(184, 7, 37);
   flex-direction: column;
 }
 .grid-item:nth-child(2) {
-  background-color: rgb(88, 44, 15);
+  background-color: rgb(173, 136, 110);
 }
 .grid-item:nth-child(3) {
   background-color: rgb(23, 15, 94);
