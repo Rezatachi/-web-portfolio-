@@ -161,6 +161,7 @@ nav{
     min-height: 12vh;
     display: flex;
     position: fixed;
+    top: 0;
     justify-content: space-around;
     align-items: center;
     z-index: 3;
@@ -171,8 +172,8 @@ nav{
 
  
 .head-items{
-  position: relative;
-    height: 12vh;
+  
+  min-height: 12vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -334,13 +335,14 @@ nav{
 
  .skills-container{
    position: relative;
-     height: 700px;
+     height: 600px;
      width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      flex-direction: column;
      row-gap: 1rem;
+     margin-top: 10%;
      
   
  }
@@ -573,13 +575,13 @@ padding: 2.5px 0;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -100px;
 }
 
 
 
 .project-container{
-  height: 100vh;
+  position: relative;
+  height: 110vh;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -588,6 +590,8 @@ padding: 2.5px 0;
 }
 
 .grid-container{
+  position: relative;
+  bottom: 0;
   display: grid;
   gap: 1.5rem;
   height: 900px;
@@ -661,7 +665,32 @@ padding: 2.5px 0;
 
 
 
+@media screen and (max-width:720px){
 
+  
+  .skills-container{
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+  }
+ 
+  .barmobile{
+    width: 50%;
+    padding: 0px 50px;
+  }
+ 
+  .innermobile{
+    left: 0;
+  }
+ 
+  .ul-mobile{
+   left: 0;
+  }
+  .grid-container{
+   grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
+   grid-auto-rows: 500px;
+  }
+ }
 /* Mobile Responive */
 @media screen and (max-width:1200px){
 
